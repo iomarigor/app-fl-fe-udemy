@@ -10,7 +10,7 @@ class CustomCardType1 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Card(
       child: Column(children: [
-        ListTile(
+        const ListTile(
           leading: Icon(
             Icons.accessibility_new_outlined,
             color: AppTheme.primaryColor,
@@ -19,13 +19,13 @@ class CustomCardType1 extends StatelessWidget {
           subtitle: Text("test local para la asd"),
         ),
         Padding(
-          padding: EdgeInsets.only(right: 5),
+          padding: const EdgeInsets.only(right: 5),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.end,
             children: [
               TextButton(
                 onPressed: () {},
-                child: Text("Cancel"),
+                child: const Text("Cancel"),
               ),
               TextButton(onPressed: () {}, child: Text("Ok"))
             ],
